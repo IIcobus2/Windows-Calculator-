@@ -6,23 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js"></script>
 </head>
 <body>
-    <main>
-        <div class="topo">
-            <h1>Calculadora</h1>
+    <div class="calculator">
+        <!-- Display -->
+        <div class="display">
+            <div class="display__result"> </div>
+            <br>
+            <div class="display__operation">0</div>
         </div>
-        <div class="tela">
+        
+        <!-- Buttons -->
+        <div class="buttons">
+            <!-- Row 1 -->
+            <button id="clear" name="AC" class="special" data-op="limpar">AC</button>
+            <button id="negate" class="special" data-op="neg-pos">+/-</button>
+            <button class="special" data-op="porcentagem">%</button>
+            <button id="divide" class="operator" data-op="divisao">÷</button>
             
+            <!-- Row 2 -->
+            <button id="multiply" class="operator" data-op="multiplicacao">×</button>
+            <button class="numbers">7</button>
+            <button class="numbers">8</button>
+            <button class="numbers">9</button>
+            
+            <!-- Row 3 -->
+            <button id="subtract" class="operator" data-op="subtracao">-</button>
+            <button class="numbers">4</button>
+            <button class="numbers">5</button>
+            <button class="numbers">6</button>
+            
+            <!-- Row 4 -->
+            <button id="add" class="operator" data-op="soma">+</button>
+            <button class="numbers">1</button>
+          <button class="numbers">2</button>
+          <button class="numbers">3</button>
+          
+          <!-- Row 5 -->
+          <button id="equals" class="equal" data-op="igual">=</button>
+          <button class="numbers">0</button>
+          <button>.</button>
+          
         </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <p id="resultado"></p>
-                </div>
-            </div>
-        </div>
-    </main>
+    </div>
+    
 </body>
+    <script src="js/scripts.js"></script>
 </html>
